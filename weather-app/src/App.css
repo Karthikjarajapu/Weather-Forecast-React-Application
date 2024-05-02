@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.pexels.com/photos/388418/pexels-photo-388418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.weather-container {
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.weather-card {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth effect */
+  background-color: skyblue; /* Set the background color of weather cards to sky blue */
+}
+
+.weather-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.weather-card h3 {
+  margin: 10px 0;
+}
+
+.temperature {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.weather-card h4 {
+  font-weight: lighter;
+}
+.weather-container h1 {
+  background-color: whitesmoke;
+  border: 1px solid #111;
+  padding: 40px 0px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+.weather-container h2 {
+  font-size: 20px;
+  color: white;
+}
+.weather-card:hover {
+  transform: scale(1.05);
+}
